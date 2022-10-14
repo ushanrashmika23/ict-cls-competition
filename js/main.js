@@ -8,9 +8,7 @@ function SelectRad(radClass, activeRadId) {
     document.getElementById(activeRadId).checked = true;
 }
 
-function ChangeCard(name = "abc") {
-    let allCards = document.querySelectorAll("card-panel");
-    for (const element of allCards) {
-        console.count("hide");
-    }
+function ChangeCard(page) {
+    $("#c-panel").load(page);
+
 }
