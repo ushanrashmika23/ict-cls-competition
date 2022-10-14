@@ -1,1 +1,1 @@
-# ict-cls-competition
+# Run On LOCALHOST
