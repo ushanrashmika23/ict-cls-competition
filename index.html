@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anim.css">
+    <!-- this css use for custom font-files -->
+    <link rel="stylesheet" href="fonts/fira_sans/stylesheet.css">
+    <link rel="stylesheet" href="fonts/lora/stylesheet.css">
+    <link rel="stylesheet" href="fonts/hind_siliguri/stylesheet.css">
+    <title>Sri Lanka</title>
+</head>
+
+<body>
+
+    <section id="home">
+        <div class="home-content">
+            <h1>Sri Lanka</h1>
+            <!-- <hr> -->
+            <h6>Enjoy Wonderful Experience In Sri Lanka</h6>
+            <a href="#discover"> <button>Discover</button><br></a>
+        </div>
+        <!-- home-content -->
+        <div class="scroll-btn">
+            <img src="img/down-arrow.svg" alt="arrow" id="a1" class="down-arrow">
+            <img src="img/down-arrow.svg" alt="arrow" id="a2" class="down-arrow">
+        </div>
+        <!-- scroll0btn -->
+    </section>
+    <!-- #home -->
+    <section id="discover" style="background-image: url('img/001.jpg');">
+        <div class="timeline-canvas">
+            <div class="timeline-panel">
+                <input type="radio" name="timeline-radio" id="tr-1" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-2" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-3" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-4" class="timeline-rad" checked>
+                <input type="radio" name="timeline-radio" id="tr-5" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-6" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-7" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-8" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-9" class="timeline-rad">
+                <input type="radio" name="timeline-radio" id="tr-10" class="timeline-rad">
+                <div class="timeline">
+                    <div class="line"></div>
+                    <!-- line -->
+                    <div class="line-items">
+                        <!-- cSpell:disable -->
+                        <div id="tl-div-1" class="timeline-item"><label id="tli-1" for="tr-1" onclick="ChangeCard()" class="timeline-label">Sigiriya</label></div>
+                        <div id="tl-div-2" class="timeline-item"><label id="tli-2" for="tr-2" onclick="ChangeCard()" class="timeline-label">Sinheraja Forest</label></div>
+                        <div id="tl-div-3" class="timeline-item"><label id="tli-3" for="tr-3" onclick="ChangeCard()" class="timeline-label">Kandy</label></div>
+                        <div id="tl-div-4" class="timeline-item"><label id="tli-4" for="tr-4" onclick="ChangeCard()" class="timeline-label">Galle</label></div>
+                        <div id="tl-div-5" class="timeline-item"><label id="tli-5" for="tr-5" onclick="ChangeCard()" class="timeline-label">Nuwara Eliya</label></div>
+                        <div id="tl-div-6" class="timeline-item"><label id="tli-6" for="tr-6" onclick="ChangeCard()" class="timeline-label">Ella</label></div>
+                        <div id="tl-div-7" class="timeline-item"><label id="tli-7" for="tr-7" onclick="ChangeCard()" class="timeline-label">Yala Park</label></div>
+                        <div id="tl-div-8" class="timeline-item"><label id="tli-8" for="tr-8" onclick="ChangeCard()" class="timeline-label">Mirissa</label></div>
+                        <div id="tl-div-9" class="timeline-item"><label id="tli-9" for="tr-9" onclick="ChangeCard()" class="timeline-label">Adems Peek</label></div>
+                        <div id="tl-div-10" class="timeline-item"><label id="tli-10" for="tr-10" onclick="ChangeCard()" class="timeline-label">Trincomalee</label></div>
+
+                        <!-- cSpell:enable --><br>
+                    </div>
+                </div>
+                <!-- timeline -->
+            </div>
+            <!-- timeline panel-->
+
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+            <div class="card-panel" id="galle">
+                <div class="slider-tile">
+                    <h1>Galle</h1>
+                    <div><a href=""><button class="primary-btn">Explorer</button></a></div>
+                </div>
+                <input type="radio" name="rad" class="card-rad" id="r-1" checked>
+                <input type="radio" name="rad" class="card-rad" id="r-2">
+                <input type="radio" name="rad" class="card-rad" id="r-3">
+                <input type="radio" name="rad" class="card-rad" id="r-4">
+                <input type="radio" name="rad" class="card-rad" id="r-5">
+                <!-- slider-title -->
+                <div class="slider" id="galle">
+                    <div class="card" id="c-1" onclick="SelectRad('.card-rad', 'r-1');" style="background-image: url('img/galle/1.jpg');"></div>
+                    <div class="card" id="c-2" onclick="SelectRad('.card-rad', 'r-2');" style="background-image: url('img/galle/c1.jpg');"></div>
+                    <div class="card" id="c-3" onclick="SelectRad('.card-rad', 'r-3');" style="background-image: url('img/galle/5.jpg');"></div>
+                    <div class="card" id="c-4" onclick="SelectRad('.card-rad', 'r-4');" style="background-image: url('img/galle/6.jpg');"></div>
+                    <div class="card" id="c-5" onclick="SelectRad('.card-rad', 'r-5');" style="background-image: url('img/galle/3.webp');"></div>
+                </div>
+                <!-- slider -->
+                <div class="dots">
+                    <label class="dot" for="r-1"></label>
+                    <label class="dot" for="r-2"></label>
+                    <label class="dot" for="r-3"></label>
+                    <label class="dot" for="r-4"></label>
+                    <label class="dot" for="r-5"></label>
+                </div>
+                <!-- dots -->
+            </div>
+            <!-- card-panel -->
+
+            /*---*/
+            <div class="card-panel" id="nuwaraEliya">
+                <div class="slider-tile">
+                    <h1>Nuwara Eliya</h1>
+                    <div><a href=""><button class="primary-btn">Explorer</button></a></div>
+                </div>
+                <input type="radio" name="rad" class="card-rad" id="r-1" checked>
+                <input type="radio" name="rad" class="card-rad" id="r-2">
+                <input type="radio" name="rad" class="card-rad" id="r-3">
+                <input type="radio" name="rad" class="card-rad" id="r-4">
+                <input type="radio" name="rad" class="card-rad" id="r-5">
+                <!-- slider-title -->
+                <div class="slider" id="galle">
+                    <div class="card" id="c-1" onclick="SelectRad('.card-rad', 'r-1');" style="background-image: url('img/galle/1.jpg');"></div>
+                    <div class="card" id="c-2" onclick="SelectRad('.card-rad', 'r-2');" style="background-image: url('img/galle/c1.jpg');"></div>
+                    <div class="card" id="c-3" onclick="SelectRad('.card-rad', 'r-3');" style="background-image: url('img/galle/5.jpg');"></div>
+                    <div class="card" id="c-4" onclick="SelectRad('.card-rad', 'r-4');" style="background-image: url('img/galle/6.jpg');"></div>
+                    <div class="card" id="c-5" onclick="SelectRad('.card-rad', 'r-5');" style="background-image: url('img/galle/3.webp');"></div>
+                </div>
+                <!-- slider -->
+                <div class="dots">
+                    <label class="dot" for="r-1"></label>
+                    <label class="dot" for="r-2"></label>
+                    <label class="dot" for="r-3"></label>
+                    <label class="dot" for="r-4"></label>
+                    <label class="dot" for="r-5"></label>
+                </div>
+                <!-- dots -->
+            </div>
+            <!-- card-panel -->
+
+        </div>
+
+        <!-- %%%%%%%%%%%%%%%%%%%%% -->
+
+    </section>
+    <!-- #discover -->
+</body>
+<!-- local js file -->
+<script src="js/main.js"></script>
+<!-- jquery used for smooth scrolling effect-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script>
+<script>
+    $(function() {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+</script>
+<!-- jquery end -->
+
+</html>
