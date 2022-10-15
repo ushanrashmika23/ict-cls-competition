@@ -12,3 +12,13 @@ function ChangeCard(page) {
     $("#c-panel").load(page);
 
 }
+
+
+function LoadDescription(id) {
+    let url = "description.html " + id;
+    $(".description").load(url);
+}
+
+function LoadContent(page) {
+    $("#place-content").load(page);
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/anim.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' />
     <!-- this css use for custom font-files -->
     <link rel="stylesheet" href="fonts/fira_sans/stylesheet.css">
     <link rel="stylesheet" href="fonts/lora/stylesheet.css">
@@ -49,15 +50,19 @@
                     <div class="line-items">
                         <!-- cSpell:disable -->
                         <div id="tl-div-1" class="timeline-item"><label id="tli-1" for="tr-1" onclick="ChangeCard('sigiriyaCard.html')" class="timeline-label">Sigiriya</label></div>
-                        <div id="tl-div-2" class="timeline-item"><label id="tli-2" for="tr-2" onclick="ChangeCard('sinherajaCard.html')" class="timeline-label">Sinheraja Forest</label></div>
+                        <div id="tl-div-2" class="timeline-item"><label id="tli-2" for="tr-2" onclick="ChangeCard('sinherajaCard.html')" class="timeline-label">Sinheraja
+                                Forest</label></div>
                         <div id="tl-div-3" class="timeline-item"><label id="tli-3" for="tr-3" onclick="ChangeCard('kandyCard.html')" class="timeline-label">Kandy</label></div>
                         <div id="tl-div-4" class="timeline-item"><label id="tli-4" for="tr-4" onclick="ChangeCard('galleCard.html')" class="timeline-label">Galle</label></div>
-                        <div id="tl-div-5" class="timeline-item"><label id="tli-5" for="tr-5" onclick="ChangeCard('nuwaraeliyaCard.html')" class="timeline-label">Nuwara Eliya</label></div>
+                        <div id="tl-div-5" class="timeline-item"><label id="tli-5" for="tr-5" onclick="ChangeCard('nuwaraeliyaCard.html')" class="timeline-label">Nuwara Eliya</label>
+                        </div>
                         <div id="tl-div-6" class="timeline-item"><label id="tli-6" for="tr-6" onclick="ChangeCard('ellaCard.html')" class="timeline-label">Ella</label></div>
                         <div id="tl-div-7" class="timeline-item"><label id="tli-7" for="tr-7" onclick="ChangeCard('yalaCard.html')" class="timeline-label">Yala Park</label></div>
                         <div id="tl-div-8" class="timeline-item"><label id="tli-8" for="tr-8" onclick="ChangeCard('mirissaCard.html')" class="timeline-label">Mirissa</label></div>
-                        <div id="tl-div-9" class="timeline-item"><label id="tli-9" for="tr-9" onclick="ChangeCard('ademspeekCard.html')" class="timeline-label">Adems Peek</label></div>
-                        <div id="tl-div-10" class="timeline-item"><label id="tli-10" for="tr-10" onclick="ChangeCard('anuradhapura.html')" class="timeline-label">Anuradhapura</label></div>
+                        <div id="tl-div-9" class="timeline-item"><label id="tli-9" for="tr-9" onclick="ChangeCard('ademspeekCard.html')" class="timeline-label">Adems Peek</label>
+                        </div>
+                        <div id="tl-div-10" class="timeline-item"><label id="tli-10" for="tr-10" onclick="ChangeCard('anuradhapura.html')" class="timeline-label">Anuradhapura</label>
+                        </div>
 
                         <!-- cSpell:enable --><br>
                     </div>
@@ -70,8 +75,8 @@
 
             <div class="card-panel" id="c-panel">
                 <div class="slider-tile">
-                    <h1>Sri Lanka</h1>
-                    <div><a href="#place-description"><button class="primary-btn">Explorer</button></a></div>
+                    <h1>Galle</h1>
+                    <div><a href="#place-description"><button class="primary-btn" onclick="LoadContent('galle.html')">Explorer</button></a></div>
                 </div>
                 <input type="radio" name="rad" class="card-rad" id="r-1" checked>
                 <input type="radio" name="rad" class="card-rad" id="r-2">
@@ -99,16 +104,90 @@
             <!-- card-panel -->
 
         </div>
-
+        <!-- timeline-canvas -->
         <!-- %%%%%%%%%%%%%%%%%%%%% -->
 
     </section>
     <!-- #discover -->
 
     <section id="place-description">
-        <div id="place-content">
-            abc
+        <a href="#discover"><i class="fas fa-times"></i></a>
+        <!-- ++++++++++++++++++++++++++++++++ -->
+
+        <div id="place-content" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/galle/cov1.jpg');">
+
+            <div class="description" style="background-color: rgba(0, 0, 0, .6);">
+                <h1>Galle Fort</h1>
+                <img src="img/galle/c1.jpg" alt="" srcset="">
+                <div class="img-control">
+                    <i id="previous" class="fa-solid fa-chevron-left"></i>
+                    <i id="next" class="fa-solid fa-chevron-right"></i>
+                </div>
+                <p>The story of the Galle Dutch Fort; a UNESCO World Heritage Site reverberates through every traveller’s photos and captions. Initially built by the Portuguese in the 16th century during their conquests, the fort was later fortified and
+                    conquered by the Dutch in the 17th century, until it later fell to the might of the British. The old town of Galle was once used as a trading port for spices and other goods for over 200 years. However, today, the fort has been transformed
+                    into a place of history, romance and beauty where travellers are warmly welcomed to dive head first into the exotic stories and be a part of this heritage site. Fifty Lighthouse Street is set within the fort and offers the perfect
+                    base for you to explore the charms of Galle. Preserved in its original glory, stroll along the ramparts and admire the imposing structures like the Galle Lighthouse, Galle Clocktower and the Groote Kerk. A Galle Fort Walking Tour with
+                    us, will reveal secrets that only a local from within the fort will know. Our walking tour takes you through the backroads of this iconic fort, visiting charming structures, museums, old buildings and more as you hear endless stories,
+                    legends and some secrets of the Galle Dutch Fort.</p>
+
+
+                <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="580" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=galle%20fort&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 400px;
+                                width: 580px;
+                            }
+                        </style>
+                        <a href="https://www.embedgooglemap.net"></a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none!important;
+                                height: 400px;
+                                width: 580px;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+
+                <button><i class="fa-solid fa-plane"></i>&nbsp;Book A Trip</button>
+
+            </div>
+            <!-- description -->
+            <div class="places" style="background-color: rgba(0, 0, 0, .3);">
+                <h1>Places to travel around Galle</h1>
+                <div class="place-card-panel">
+
+                    <div class="place-card" onclick="LoadDescription('#galle-fort')">
+                        <img src="img/galle/c1.jpg" alt="">
+                        <label for="">Gale Fort</label>
+                    </div>
+                    <!-- place-card -->
+
+                    <div class="place-card" onclick="LoadDescription('#hikkaduwa')">
+                        <img src="img/galle/hikkaduwa.jpg" alt="">
+                        <label for="">Hikkaduwa</label>
+                    </div>
+                    <!-- place-card -->
+
+                    <div class="place-card" onclick="LoadDescription('#jungle-beach')">
+                        <img src="img/galle/jungle-beach.jpg" alt="">
+                        <label for="">Jungle Beach</label>
+                    </div>
+                    <!-- place-card -->
+
+                </div>
+                <!-- place-card-panel -->
+            </div>
+            <!-- places -->
         </div>
+        <!-- #place-content -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     </section>
 
 </body>
