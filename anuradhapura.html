@@ -1,26 +1,74 @@
-<div class="slider-tile">
-    <h1>Anuradhapura</h1>
-    <div><a href="#place-description" onclick="LoadContent('anuradhapura.html')"><button class="primary-btn">Explorer</button></a></div>
+<div id="place-content" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/anuradhapura/1.jpg');">
+
+    <div class="description" style="background-color: rgba(0, 0, 0, .6);">
+        <h1>Ruwanwalisaya</h1>
+        <img src="img/anuradhapura/ruwanwalisaya.jpg" alt="" srcset="">
+        <div class="img-control">
+            <i id="previous" class="fa-solid fa-chevron-left"></i>
+            <i id="next" class="fa-solid fa-chevron-right"></i>
+        </div>
+        <p>The Ruwanwelisaya Dagoba was built in 140 BC by King Dutugemunu, who later became King of all Sri Lanka after defeating the Chola King, Ellalan. Dutugamunu was king of the Anuradhapura Kingdom, and reigned from 161 to 137 BC, expanding the city
+            of Anuradhapura to project the power of Sinhalese culture across Sri Lanka. The stupa was constructed in a hemispherical shape, its purpose to hold the relics of the Gothama Buddha. However, King Dutugemunu died before its completion, his
+            brother Saddhatissa ascending the throne. The stupa was a ruin by the 19th century, having been overgrown with new forestry. Yet after meticulous fundraising efforts by a Sinhalese bhikkhu, male Buddhist monks, it was renovated in the early
+            20th century. The Ruwanveli Seya Restoration Society, including, philanthropist Hendrick Appuhamy, donated Rs 20 million for the restoration works. Foundations were laid in 1902 and the stupa was crowned in June 1940. The design of the stupa
+            was designed to reflect the teachings of Buddha: the dome representing the vastness of doctrine, the four facets signifying the Four Noble Truths, concentric rings highlighting the Noble Eightfold Middle Path, and a large crystal on top represents
+            the goal of Buddhist enlightenment.</p>
+
+
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="580" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=ruwanwalisaya,anuradhapura.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 400px;
+                        width: 580px;
+                    }
+                </style>
+                <a href="https://www.embedgooglemap.net"></a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none!important;
+                        height: 400px;
+                        width: 580px;
+                    }
+                </style>
+            </div>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+
+        <button><i class="fa-solid fa-plane"></i>&nbsp;Book A Trip</button>
+
+    </div>
+    <!-- description -->
+    <div class="places" style="background-color: rgba(0, 0, 0, .3);">
+        <h1>Places to visit in Anuradhapura</h1>
+        <div class="place-card-panel">
+
+            <div class="place-card" onclick="LoadDescription('#ruwanwalisaya')">
+                <img src="img/anuradhapura/ruwanwalisaya.jpg" alt="">
+                <label for="">Ruwanwalisaya</label>
+            </div>
+            <!-- place-card -->
+
+            <div class="place-card" onclick="LoadDescription('#sri-maha-bodiya')">
+                <img src="img/anuradhapura/sri-maha-bodiya.jpg" alt="">
+                <label for="">Sri Maha Bodhiya</label>
+            </div>
+            <!-- place-card -->
+
+            <div class="place-card" onclick="LoadDescription('#mihinthalaya')">
+                <img src="img/anuradhapura/mihinthalaya.jpg" alt="">
+                <label for="">Mihinthalaya</label>
+            </div>
+            <!-- place-card -->
+
+
+        </div>
+        <!-- place-card-panel -->
+    </div>
+    <!-- places -->
 </div>
-<input type="radio" name="rad" class="card-rad" id="r-1" checked>
-<input type="radio" name="rad" class="card-rad" id="r-2">
-<input type="radio" name="rad" class="card-rad" id="r-3">
-<input type="radio" name="rad" class="card-rad" id="r-4">
-<input type="radio" name="rad" class="card-rad" id="r-5">
-<!-- slider-title -->
-<div class="slider" id="galle">
-    <div class="card" id="c-1" onclick="SelectRad('.card-rad', 'r-1');" style="background-image: url('img/anuradhapura/1.jpg');"></div>
-    <div class="card" id="c-2" onclick="SelectRad('.card-rad', 'r-2');" style="background-image: url('img/anuradhapura/2.jpg');"></div>
-    <div class="card" id="c-3" onclick="SelectRad('.card-rad', 'r-3');" style="background-image: url('img/anuradhapura/3.jpg');"></div>
-    <div class="card" id="c-4" onclick="SelectRad('.card-rad', 'r-4');" style="background-image: url('img/anuradhapura/4.jpg');"></div>
-    <div class="card" id="c-5" onclick="SelectRad('.card-rad', 'r-5');" style="background-image: url('img/anuradhapura/5.jpg');"></div>
-</div>
-<!-- slider -->
-<div class="dots">
-    <label class="dot" for="r-1"></label>
-    <label class="dot" for="r-2"></label>
-    <label class="dot" for="r-3"></label>
-    <label class="dot" for="r-4"></label>
-    <label class="dot" for="r-5"></label>
-</div>
-<!-- dots -->
+<!-- #place-content -->
