@@ -1,4 +1,7 @@
 // alert()
+window.addEventListener("load", function() {
+    $("#loader").hide();
+});
 
 function SelectRad(radClass, activeRadId) {
     let cRads = document.querySelectorAll(radClass);
